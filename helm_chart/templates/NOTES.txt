@@ -1,0 +1,6 @@
+The contents of this file are printed out to the screen when the installation or upgrading
+of the helm chart is successfull.
+
+This is mostly used to display next steps, url or other commands to follow.
+
+This is the {{.Values.environment}} environment 

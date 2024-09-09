@@ -1,0 +1,9 @@
+namespace: prod
+configmap:
+  data:
+    CUSTOM_HEADER: "This is the production environmet with helm chart!"
+
+image:
+  replicaCount: 2
+
+environment: production 

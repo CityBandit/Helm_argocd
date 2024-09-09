@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: myapp-svc
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.appName }}
+
+  type: {{ .Values.service.type }}
+  ports:
+    - name: flask
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}

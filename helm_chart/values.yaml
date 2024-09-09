@@ -1,0 +1,29 @@
+# Default values for helloworld.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+# all 
+appName: myapp
+
+
+# configmap
+configmap:
+  name: myconfigmapv1
+# deployment 
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest
+  port: 5000
+
+
+
+# service
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+
